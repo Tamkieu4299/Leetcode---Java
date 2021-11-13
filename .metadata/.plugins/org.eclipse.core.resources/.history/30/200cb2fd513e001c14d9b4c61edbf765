@@ -1,0 +1,28 @@
+
+public class Solution {
+	public boolean isPalindrome(int x) {
+        String s = Integer.toString(x);
+        int i = 0, j = s.length() - 1;
+        
+        while (i < j) {
+ 
+            // If there is a mismatch
+            if (str.charAt(i) != str.charAt(j))
+                return false;
+ 
+            // Increment first pointer and
+            // decrement the other
+            i++;
+            j--;
+        }
+ 
+        // Given string is a palindrome
+        return true;
+    }
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

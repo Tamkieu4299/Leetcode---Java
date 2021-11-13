@@ -1,0 +1,13 @@
+
+public class Solution {
+	public boolean isPalindrome(int x) {
+        String s = Integer.toString(x);
+        
+    }
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

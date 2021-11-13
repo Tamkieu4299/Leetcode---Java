@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;14Days_Algorithm&apos; to &apos;Binary Search&apos;" description="Rename resource &apos;14Days_Algorithm&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/14Days_Algorithm" name="Binary Search" stamp="1634183169819" updateReferences="true"/>
+</session>

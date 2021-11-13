@@ -1,0 +1,56 @@
+import java.util.*;
+
+public class Solution {
+	
+	public static String convert(String s, int numRows) {
+		
+		List<Character[]> lOfLists = new ArrayList<Character[]>(numRows); 
+ 		int i=0; // columns
+		int j=0; // rows
+		String res="";
+		for(int k = 0; k < s.length(); k++)  {
+			lOfLists.add(new Character[7]);
+	    }
+		
+		while(0<=i && i<7 && 0<=j && j<numRows) {
+			
+			if(lOfLists.get(j)[i]!=null && lOfLists.get(j)[i]!=s.charAt(s.length()-1)) break;
+			
+			if(j==numRows) {
+				lOfLists.get(j)[i] = s.charAt(j);
+				System.out.println(s.charAt(j));
+				j++;
+				j--;
+				i++;
+			}
+			if(i+1%numRows==0) {
+				j++;
+			}
+			if(j<numRows) {
+			lOfLists.get(j)[i] = s.charAt(j);
+			System.out.println(s.charAt(j));
+			j++;
+			}
+		}
+		
+		for(int m=0; m<numRows; m++) {
+			for(int  n=0;  n<7;  n++) {
+				res+=lOfLists.get(m)[n];
+			}
+			
+		}
+		return res;
+				
+				
+	}
+		
+
+	public static void main(String[] args) {
+		String s="PAYPALISHIRING";
+		int numRows = 3;
+		
+		System.out.println(convert(s, numRows));
+
+	}
+
+}
